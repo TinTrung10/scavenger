@@ -1,11 +1,13 @@
+import Netto from "../images/Netto.png";
+import Bilka from "../images/Bilka.png";
+
 const data = [
+
+    { src:  Netto},
+    ,
     {
-      src: "https://i.picsum.photos/id/235/400/400.jpg?hmac=lhKy3NgJaHngfFJpUSThs5GCScgNjaqavtTVvLCiRRc",
-      title: "A nice view",
-    },
-    {
-      src: "https://i.picsum.photos/id/844/400/400.jpg?hmac=_oCcst4n0X6adjyA_hE9zPyLTADwKmYETga4tV-ocQE",
-      title: "Green Bamboo",
+      src: Bilka,
+      
     },
     {
       src: "https://i.picsum.photos/id/5/400/400.jpg?hmac=P8V7mQXwAUnx9rTeHzGEWnux2lS4iDnXuZQMmPdp6a8",

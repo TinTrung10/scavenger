@@ -47,7 +47,6 @@ const Carousel = ({ images }) => {
             }
           >
             <img src={img.src} alt="img of carousel" />
-            <p>{img.title}</p>
           </div>
         ))}
       </div>
