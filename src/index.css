@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --broedtekst:Roboto; 
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  z-index: 3;
+  background: #f7a414;
+}
+
+nav a {
+  font-size: 25px;
+  color: #ffffff; 
+  text-decoration: none;
+  flex: 1;
+  margin: 0;
+  padding: 15px;
+}
+
+nav p {
+  font-size: 10px;
+  margin: 0;
+  padding: 2px;
+  font-family: var(--broedtekst);
+}
+
+nav a.active {
+  background: rgb(227, 156, 34);
+}
+
+.topnav {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+}
+
+.row {
+  width: 100%;
+}
+
+.logo {
+  font-family: var(--broedtekst);
+  color: white;
+  position: absolute;
+  left:25px;
+  top:10px;
+  font-weight: normal;
+}
+
+.search {
+  position: absolute;
+  right:30px;
+  top:25px;
+  color: white;
+  font-size: 1.8em;
+  text-align: center;
+}
+/* ---------- grid container styling ---------- */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .grid-container {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.grid-container > article {
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  padding: 1.5em;
+  background-color: var(--white);
+  transition: 0.5s;
+  animation: fadeIn 0.5s;
+  cursor: pointer;
+}
+
+.grid-container > article ::first-letter {
+  text-transform: uppercase;
+}
+
+.grid-container > article:hover {
+  box-shadow: 0 8px 16px 0 var(--green);
+}
+
+.grid-container > article img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
