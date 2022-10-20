@@ -7,11 +7,6 @@
   pointer-events: none;
 }
 
-.background_img {
-  height: 80%;
-  width: 100%;
-  position: relative;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
