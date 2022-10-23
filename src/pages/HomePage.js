@@ -9,7 +9,7 @@ export default function HomePage() {
 
     useEffect(() => {
         async function getData() {
-            const response = await fetch("http://wordpress.mitmulti.dk/wp-json/wp/v2/posts?_embed");
+            const response = await fetch("http://webapp.kallemersh.dk/wp-json/wp/v2/posts?_embed");
             const data = await response.json();
 						console.log(data);
             setPosts(data);

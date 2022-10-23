@@ -10,7 +10,7 @@ export default function PostItem({ post }) {
     return (
         <article>
             <img src={image} alt={post.title.rendered} />
-            <h2>{parse(post.title.rendered)}</h2>
+            <h2>{parse(post.title.rendered)} </h2>
             {parse(post.content.rendered)}
         </article>
     );
