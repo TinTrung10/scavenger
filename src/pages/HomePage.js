@@ -23,7 +23,8 @@ export default function HomePage() {
             
             {posts.map(post => (
 		    <PostItem key={post.id} post={post} />
-    ))}
+            
+))}
         </section>
     );
 }

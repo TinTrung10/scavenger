@@ -94,6 +94,8 @@ nav a.active {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1em;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 @media (min-width: 600px) {
@@ -112,14 +114,28 @@ nav a.active {
   display: flex;
   flex-direction: row;
   text-align: center;
-  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.25);
   text-align: center;
-  padding: 1em;
+  padding: 0.5em;
   background-color: var(--white);
   transition: 0.5s;
   animation: fadeIn 0.5s;
   cursor: pointer;
-  background-color: #FEF3E1
+  border-radius: 5px;
+  font-family: var(--broedtekst);
+  background-color: #FEF3E1 ;
+}
+
+.grid-container > article h2 {
+  font-size: 0.9em;
+  margin-left: 5%;
+  margin-top: 7%;
+}
+
+.grid-container > article h6 {
+  font-size: 0.9em;
+  margin-left: 5%;
+  margin-top: 7%;
 }
 
 .grid-container > article ::first-letter {
@@ -131,11 +147,20 @@ nav a.active {
 }
 
 .grid-container > article img {
-  width: 40%;
+  width: 30%;
   height: 100px;
   object-fit: cover;
 }
 
+
+.grid-container > article #shop img {
+  display: block;
+  float: right;
+  margin-top: 30%;
+  width: 70%;
+  height: auto;
+}
+
 .grid-container > article figure {
-  width: auto;
+  margin: 0%;
 }
