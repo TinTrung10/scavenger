@@ -20,6 +20,7 @@ export default function HomePage() {
     return (  
         <section className="grid-container">
             <Carousel images={data} />
+
             
             {posts.map(post => (
 		    <PostItem key={post.id} post={post} />
