@@ -3,9 +3,11 @@ import { faChevronDown, faCommentDots, faStar, faLock, faBell, faGear } from '@f
 import "../profilepage.css";
 
 export default function ProfilePage() {
+
     return (
         <>
-        <section className="profile">
+
+         <section className="profile">
 
             <div className='profile_header'>
                 <div className='header_icon'>
