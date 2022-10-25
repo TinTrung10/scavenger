@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse, faChevronDown, faCommentDots, faStar, faLock, faBell, faGear } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown, faCommentDots, faStar, faLock, faBell, faGear } from '@fortawesome/free-solid-svg-icons'
 import "../profilepage.css";
 
 export default function ProfilePage() {
@@ -110,7 +110,6 @@ export default function ProfilePage() {
         <div className='line2'></div>
 
         </section>
-
         </>
     );
 }
