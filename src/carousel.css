@@ -17,7 +17,6 @@
   }
   
   .carousel-item {
-    display: flex;
     position: relative;
     flex-direction: column;
     flex: 1 0 100%;

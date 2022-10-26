@@ -1,5 +1,7 @@
 import { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import "../carousel.css";
+
 
 const Carousel = ({ images }) => {
   const carousel = useRef();
@@ -41,12 +43,14 @@ const Carousel = ({ images }) => {
       <div className="carousel" ref={carousel}>
         {images.map((img, idx) => (
           <div
-            key={`${idx}-${img.title}`}
+            key={`${idx}`}
             className={
               idx === count ? "carousel-item active" : "carousel-item"
             }
           >
+            <Link to={`/paper/${img.id}`}>
             <img src={img.src} alt="img of carousel" />
+            </Link>
           </div>
         ))}
       </div>

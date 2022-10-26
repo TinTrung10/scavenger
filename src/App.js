@@ -5,6 +5,7 @@ import ListPage from "./pages/ListPage";
 import ProfilePage from './pages/ProfilePage';
 import Nav from './components/Nav';
 import TopNav from './components/TopNav';
+import PaperDetails from './components/PaperDetails';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       <TopNav />
       <Nav />
       <Routes>
-        <Route path="/home" element={<HomePage />}/>
+        <Route path="/" element={<HomePage />}/>
+        <Route path="/paper/:id" element={<PaperDetails />}/>
         <Route path="/list" element={<ListPage />}/>
         <Route path="/profile" element={<ProfilePage />}/>
         <Route path="*" element={<Navigate to="/" />}/>
