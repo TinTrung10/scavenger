@@ -17,18 +17,18 @@ const data = [
     },
     {
       src: Føtex,
-      id: "Bilka",
-      url: "https://heyzine.com/flip-book/ae2dd13ce1.html"
+      id: "Føtex",
+      url: "https://heyzine.com/flip-book/64d8330685.html"
     },
     {
       src: Rema,
-      id: "Bilka",
-      url: "https://heyzine.com/flip-book/ae2dd13ce1.html"
+      id: "Rema",
+      url: "https://heyzine.com/flip-book/4acb65f38e.html"
     },
     {
       src: Aldi,
-      id: "Bilka",
-      url: "https://heyzine.com/flip-book/ae2dd13ce1.html"
+      id: "Aldi",
+      url: "https://heyzine.com/flip-book/915e4f93f4.html"
     },
   ];
   
