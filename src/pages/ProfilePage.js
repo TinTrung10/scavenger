@@ -1,15 +1,17 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse} from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown, faCommentDots, faStar, faLock, faBell, faGear } from '@fortawesome/free-solid-svg-icons'
 import "../profilepage.css";
 
 export default function ProfilePage() {
+
     return (
         <>
-        <section className="profile">
+
+         <section className="profile">
 
             <div className='profile_header'>
                 <div className='header_icon'>
-                    <FontAwesomeIcon icon={faHouse} color="#000000"/>
+                    <FontAwesomeIcon icon={faChevronDown} color="#000000"/>
                 </div>
                 <div className='header_title'>
                     <h2>Konto</h2>
@@ -37,13 +39,13 @@ export default function ProfilePage() {
 
         <section className='profile_content'>
             <div className='item1'>
-                <FontAwesomeIcon icon={faHouse} color="#000000"/>
+                <FontAwesomeIcon className='icon' icon={faCommentDots} color="#000000"/>
             </div>
             <div className='item2'>
                 <h2>Kontakt os</h2>
             </div>
             <div className='item3'>
-                <FontAwesomeIcon icon={faHouse} color="#000000"/>
+                <FontAwesomeIcon className='icon' icon={faChevronDown} color="#000000"/>
             </div>
         </section>
 
@@ -52,13 +54,13 @@ export default function ProfilePage() {
 
         <section className='profile_content'>
             <div className='item1'>
-                <FontAwesomeIcon icon={faHouse} color="#000000"/>
+                <FontAwesomeIcon className='icon2' icon={faStar} color="#000000"/>
             </div>
             <div className='item2'>
                 <h2>Skriv en anmeldelse</h2>
             </div>
             <div className='item3'>
-                <FontAwesomeIcon icon={faHouse} color="#000000"/>
+                <FontAwesomeIcon className='icon' icon={faChevronDown} color="#000000"/>
             </div>
         </section>
 
@@ -67,13 +69,13 @@ export default function ProfilePage() {
 
         <section className='profile_content'>
             <div className='item1'>
-                <FontAwesomeIcon icon={faHouse} color="#000000"/>
+                <FontAwesomeIcon className='icon' icon={faLock} color="#000000"/>
             </div>
             <div className='item2'>
                 <h2>Privatpolitik</h2>
             </div>
             <div className='item3'>
-                <FontAwesomeIcon icon={faHouse} color="#000000"/>
+                <FontAwesomeIcon className='icon' icon={faChevronDown} color="#000000"/>
             </div>
         </section>
 
@@ -82,13 +84,13 @@ export default function ProfilePage() {
 
         <section className='profile_content'>
             <div className='item1'>
-                <FontAwesomeIcon icon={faHouse} color="#000000"/>
+                <FontAwesomeIcon className='icon' icon={faBell} color="#000000"/>
             </div>
             <div className='item2'>
                 <h2>Favoritter</h2>
             </div>
             <div className='item3'>
-                <FontAwesomeIcon icon={faHouse} color="#000000"/>
+                <FontAwesomeIcon className='icon' icon={faChevronDown} color="#000000"/>
             </div>
         </section>
 
@@ -97,20 +99,19 @@ export default function ProfilePage() {
 
         <section className='profile_content'>
             <div className='item1'>
-                <FontAwesomeIcon icon={faHouse} color="#000000"/>
+                <FontAwesomeIcon className='icon3' icon={faGear} color="#000000"/>
             </div>
             <div className='item2'>
                 <h2>Indstillinger</h2>
             </div>
             <div className='item3'>
-                <FontAwesomeIcon icon={faHouse} color="#000000"/>
+                <FontAwesomeIcon className='icon' icon={faChevronDown} color="#000000"/>
             </div>
         </section>
 
         <div className='line2'></div>
 
         </section>
-
         </>
     );
 }

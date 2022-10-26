@@ -82,7 +82,7 @@
     flex-direction: row;
     width: 90%;
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 4%;
     margin-right: 10%;
     font-family: var(--broedtekst);
 }
@@ -105,6 +105,18 @@
 
 .item1, .item3 {
     margin-top: 7%;
+}
+
+.icon {
+    font-size: 1.5em; 
+}
+
+.icon2 {
+    font-size: 1.35em;
+}
+
+.icon3 {
+    font-size: 1.40em;
 }
 
 .line2 {
