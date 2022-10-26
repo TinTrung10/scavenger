@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import "../carousel.css";
 
 const Carousel = ({ images }) => {
@@ -29,7 +29,9 @@ const Carousel = ({ images }) => {
   };
 
   return (
+
     <div className="carousel-container">
+          
       <div
         className="carousel-btn left-btn"
         onClick={() => incrementCarousel(-1)}
@@ -39,19 +41,24 @@ const Carousel = ({ images }) => {
         onClick={() => incrementCarousel(1)}
       />
       <div className="carousel" ref={carousel}>
+       
         {images.map((img, idx) => (
           <div
-            key={`${idx}-${img.title}`}
-            className={
-              idx === count ? "carousel-item active" : "carousel-item"
-            }
-          >
+          key={`${idx}-${img.title}`}
+          className={
+            idx === count ? "carousel-item active" : "carousel-item"
+          }
+        >
             <img src={img.src} alt="img of carousel" />
           </div>
         ))}
       </div>
+    
     </div>
+
   );
 };
+
+
 
 export default Carousel;
