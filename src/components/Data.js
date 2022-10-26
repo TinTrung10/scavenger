@@ -16,16 +16,19 @@ const data = [
       url: "https://heyzine.com/flip-book/ae2dd13ce1.html"
     },
     {
-      src: "https://i.picsum.photos/id/5/400/400.jpg?hmac=P8V7mQXwAUnx9rTeHzGEWnux2lS4iDnXuZQMmPdp6a8",
-      title: "dude on a laptop",
+      src: Føtex,
+      id: "Bilka",
+      url: "https://heyzine.com/flip-book/ae2dd13ce1.html"
     },
     {
-      src: "https://i.picsum.photos/id/830/400/400.jpg?hmac=PTgxF7YOSn6WHgCetWwC3rZjxMcl69m0m9hUrV6nmTs",
-      title: "Noice Hills m8",
+      src: Rema,
+      id: "Bilka",
+      url: "https://heyzine.com/flip-book/ae2dd13ce1.html"
     },
     {
-      src: "https://i.picsum.photos/id/206/400/400.jpg?hmac=ZfNzmwb_G-cENYBcFfGB0f-xCi3wb6TBkE-4eQGt7ys",
-      title: "Sun shines bright",
+      src: Aldi,
+      id: "Bilka",
+      url: "https://heyzine.com/flip-book/ae2dd13ce1.html"
     },
   ];
   
