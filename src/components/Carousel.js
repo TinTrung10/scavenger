@@ -1,4 +1,5 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import "../carousel.css";
 
 const Carousel = ({ images }) => {
@@ -49,7 +50,9 @@ const Carousel = ({ images }) => {
             idx === count ? "carousel-item active" : "carousel-item"
           }
         >
+          <Link to={`/paper/${img.id}`}>
             <img src={img.src} alt="img of carousel" />
+            </Link>
           </div>
         ))}
       </div>
