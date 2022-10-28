@@ -33,8 +33,8 @@ export default function HomePage() {
 <h3>Mine favoritter</h3>
         <div className="fav_container">
         
-            <img src={Bilka}/>
-            <img src={Netto}/>
+            <img src={Bilka} alt="bilka logo"/>
+            <img src={Netto} alt="netto logo"/>
         </div>
 
 
