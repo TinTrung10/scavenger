@@ -19,10 +19,9 @@ export default function ListPage() {
     return (
         <>
         <section className="list">
-            <h1>Indkøbslisten</h1>
-            <p>Vores liste....</p>
+            <h3>Indkøbskurv</h3>
         </section>
-                    <section className="grid-container">
+                    <section className="grid-container-list">
                     {posts.map(post => (
                     <PostItem key={post.id} post={post} />
                  ))}
