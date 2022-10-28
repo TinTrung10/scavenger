@@ -56,6 +56,13 @@ nav p {
   font-family: var(--broedtekst);
 }
 
+h3 {
+  margin: 10% 0 5% 5%;
+  color: #f7a414;
+  font-family: var(--broedtekst);
+  text-transform: uppercase;
+}
+
 nav a.active {
   background: rgb(227, 156, 34);
 }
@@ -92,10 +99,9 @@ nav a.active {
 /* ---------- grid container styling ---------- */
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   gap: 1em;
   margin-left: 5%;
-  margin-right: 5%;
 }
 
 @media (min-width: 600px) {
@@ -127,14 +133,14 @@ nav a.active {
 
 .grid-container > article h2 {
   font-size: 0.9em;
-  margin-left: 5%;
-  margin-top: 7%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .grid-container > article h6 {
   font-size: 0.9em;
-  margin-left: 5%;
-  margin-top: 7%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .grid-container > article ::first-letter {
@@ -146,20 +152,38 @@ nav a.active {
 }
 
 .grid-container > article img {
-  width: 30%;
+  width: 100px;
   height: 100px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 
 .grid-container > article #shop img {
   display: block;
-  float: right;
-  margin-top: 30%;
-  width: 70%;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+  object-fit: contain;
+}
+.grid-container > article #shop {
+  width: auto;
   height: auto;
 }
 
 .grid-container > article figure {
   margin: 0%;
+}
+
+/* Mine favoritter */
+.fav_container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  flex-direction: row;
+}
+
+.fav_container > img {
+  width: 25%;
+  margin-left: 5%;
 }
