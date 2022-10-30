@@ -53,7 +53,7 @@ const deleteList = async (id) => {
     return (
         <div className="bgList">
             <div className="container">
-                <h3 className="heading">Indkøbsliste</h3>
+                <h3 className="heading"> Min Indkøbsliste</h3>
                 <form onSubmit={createList} className="form">
                     <input value={input} onChange={(e) => setInput(e.target.value)} className="input" type="text" placeholder="Tilføj vare..."/>
                     <button className="btnList"><FontAwesomeIcon icon={faPlus} size={'xl'} /></button>
@@ -65,6 +65,11 @@ const deleteList = async (id) => {
                 </ul>
 
                 {list.length < 1 ? null : <p className="count">{`Du har tilføjet ${list.length} varer`}</p> }
+                <div>
+                    <p>Din pris:</p>
+                    <hr></hr>
+                    <p><strong>82 kr.</strong></p>
+                </div>
             </div>
         </div>
     );
