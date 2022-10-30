@@ -10,6 +10,7 @@ import {query, collection, onSnapshot, updateDoc, doc, addDoc, deleteDoc} from '
 
 
 export default function ListPage() {
+    //initialize useState hooks
     const [list, setList] = useState([]);
     const [input, setInput] = useState('');
 
@@ -54,7 +55,7 @@ const deleteList = async (id) => {
         <div className="bgList">
             <div className="container">
                 <h3 className="heading"> Min Indkøbsliste</h3>
-                <form onSubmit={createList} className="form">
+                <form onSubmit={createList} className="form"> 
                     <input value={input} onChange={(e) => setInput(e.target.value)} className="input" type="text" placeholder="Tilføj vare..."/>
                     <button className="btnList"><FontAwesomeIcon icon={faPlus} size={'xl'} /></button>
                 </form>
@@ -63,7 +64,7 @@ const deleteList = async (id) => {
                        <Shoppinglist key={index} Shoppinglist={shoplist} toggleComplete={toggleComplete} deleteList={deleteList} /> 
                     ))}
                 </ul>
-
+                
                 {list.length < 1 ? null : <p className="count">{`Du har tilføjet ${list.length} varer`}</p> }
                 <div>
                     <p>Din pris:</p>

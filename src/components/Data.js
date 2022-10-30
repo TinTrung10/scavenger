@@ -4,6 +4,7 @@ import Føtex from "../images/Føtex.png";
 import Rema from "../images/Rema.png";
 import Aldi from "../images/Aldi.png";
 
+//array for images used in store slider
 const data = [
 
     { src:  Netto,
