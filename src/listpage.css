@@ -6,105 +6,111 @@
 
 .list h3 {
     color: #f7a414;
-    margin-left: 5%;
     font-family: var(--broedtekst);
     text-transform: uppercase;
 }
 
 /* ---------- grid container styling ---------- */
-.grid-container-list {
-    display: grid;
-    grid-template-rows: 1fr;
-    gap: 1em;
-    margin-left: 5%;
-    width: 80%;
-  }
-  
-  @media (min-width: 600px) {
-    .grid-container-list {
-        grid-template-columns: 1fr 1fr;
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .grid-container-list {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
-  
-  .grid-container-list > article {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.25);
-    padding: 0.5em;
-    background-color: var(--white);
-    transition: 0.5s;
-    animation: fadeIn 0.5s;
-    cursor: pointer;
-    border-radius: 5px;
-    font-family: var(--broedtekst);
-    background-color: #FEF3E1 ;
-  }
-  
-  .grid-container-list > article h2 {
-    font-size: 0.9em;
-    margin-top: auto;
-    margin-bottom: auto;
-    max-width: 100%;
-    flex-basis: 150px;
-  }
-  
-  .grid-container-list > article h6 {
-    font-size: 0.9em;
-    margin-top: auto;
-    margin-bottom: auto;
-    flex-basis: 30px;
-  }
-  
-  .grid-container-list > article ::first-letter {
-    text-transform: uppercase;
-  }
-  
-  .grid-container-list > article:hover {
-    box-shadow: 0 8px 16px 0 var(--green);
-  }
-  
-  .grid-container-list > article img {
-    width: 50px;
-    height: 40px;
-    object-fit: contain;
-  }
-  
-  
-  .grid-container-list > article #shop img {
-    display: block;
-    position: relative;
-    margin-top: auto;
-    margin-bottom: auto;
-    object-fit: contain;
-  }
-
-  .grid-container-list > article #shop {
-    width: auto;
-    height: auto;
-  }
-  
-  .grid-container-list > article figure {
-    margin: 0%;
-  }
-
-  .grid-container-list > article img {
-    display: none;
-  }
-
-  .grid-container-list > article #shop {
-    display: block;
-    flex-basis: 100px;
-    margin-right: 0%;
-    margin-left: 15%;
-  }
+.bgList {
+  height: 100vh;
+  padding: 1rem;
+}
 
 
+.container {
+  background-color: whitesmoke;
+  max-width: 390px;
+  margin: auto;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
 
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  border: solid #f7a414;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.btnList {
+  background: none;
+  border: solid #f7a414;
+  font-size: 1rem;
+  padding: 1rem;
+  color: whitesmoke;
+  background-color: #f7a414;
+}
+
+.count {
+  text-align: center;
+  padding: 1rem;
+}
+
+.listStyle {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgrey;
+  padding: 1rem;
+  margin: 1rem 0 1rem 0;
+  text-transform: capitalize;
+  border-radius: 10px;
+}
+
+.listDone {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FEF3E1;
+  padding: 1rem;
+  margin: 1rem 0 1rem 0;
+  text-transform: capitalize;
+  border-radius: 10px;
+}
+
+.row {
+  display: flex;
+}
+
+.textList {
+  margin-left: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.textListComplete {
+  margin-left: 1rem;
+  cursor: pointer;
+  text-decoration: line-through;
+  text-decoration-thickness: 2.5px;
+  font-weight: bold;
+}
+
+.container > ul {
+  padding: 0;
+}
+
+.check {
+  display: none;  
+}
+
+button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: black;
+}
 
