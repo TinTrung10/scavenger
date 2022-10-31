@@ -5,6 +5,7 @@
     position: relative;
     background-color: #FEF3E1;
     flex-direction: column;
+    box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.25);
   }
   
   .carousel {
