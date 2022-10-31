@@ -66,21 +66,23 @@
 .listStyle {
   display: flex;
   justify-content: space-between;
-  background-color: lightgrey;
+  background-color: white;
   padding: 1rem;
   margin: 1rem 0 1rem 0;
   text-transform: capitalize;
   border-radius: 10px;
+  border: solid #f7a414;
 }
 
 .listDone {
   display: flex;
   justify-content: space-between;
-  background-color: #FEF3E1;
+  background-color: lightgrey;
   padding: 1rem;
   margin: 1rem 0 1rem 0;
   text-transform: capitalize;
   border-radius: 10px;
+  border: solid #f7a414;
 }
 
 .row {
@@ -91,6 +93,7 @@
   margin-left: 1rem;
   cursor: pointer;
   font-weight: bold;
+  color: black;
 }
 
 /*Styling for completed item*/
