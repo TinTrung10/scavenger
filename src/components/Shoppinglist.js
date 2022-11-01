@@ -3,7 +3,11 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import React from 'react'
 import "../listpage.css";
 
+//Lavet af Martin Holme Elsborg
 
+//List item created with css classed determined if the list is completed
+//Change from standard css class to completed css class if item is completed
+//Delete item if clicking on the trash icon
 const Shoppinglist = ({Shoppinglist, toggleComplete, deleteList}) => {
   return (
     <li className={Shoppinglist.completed ? 'listDone' : 'listStyle'}>

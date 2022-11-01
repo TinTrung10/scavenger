@@ -2,6 +2,8 @@ import { useParams } from 'react-router-dom'
 import data from './Data';
 import "../iframestyling.css";
 
+//Lavet af Martin Holme Elsborg
+
 //Display the correct paper magazine for each store
 //Mapping over image array from data.js and filter the correct paper with id
 const PaperDetails = () => {
