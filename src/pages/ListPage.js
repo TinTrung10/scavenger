@@ -8,7 +8,7 @@ import Shoppinglist from "../components/Shoppinglist";
 import {db} from "../firebase"
 import {query, collection, onSnapshot, updateDoc, doc, addDoc, deleteDoc} from 'firebase/firestore'
 
-
+//Lavet af Martin Holme Elsborg
 
 export default function ListPage() {
     //initialize useState hooks
@@ -51,7 +51,10 @@ const toggleComplete = async (Shoppinglist) => {
 const deleteList = async (id) => {
     await deleteDoc(doc(db, 'lists', id))
 }
-
+//Form created with input fields and buttons.
+//Onclick/onchange functions are added to the buttons/input
+//ul element maps over list items from firebase database
+//Item length calculated and displayed on site and a price/logo is added within a div tag
     return (
         <div className="bgList">
             <div className="container">
