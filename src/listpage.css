@@ -124,3 +124,8 @@ button {
   color: black;
 }
 
+.flexPrice {
+  display: flex;
+  justify-content: space-between;
+}
+

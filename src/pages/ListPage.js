@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import Netto from "../images/Netto.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import "../listpage.css";
@@ -69,7 +70,10 @@ const deleteList = async (id) => {
                 <div>
                     <p>Din pris:</p>
                     <hr></hr>
+                    <div className="flexPrice">
                     <p><strong>82 kr.</strong></p>
+                    <img src={Netto} width="50px" alt="Store calculated by price"/>
+                    </div>
                 </div>
             </div>
         </div>
